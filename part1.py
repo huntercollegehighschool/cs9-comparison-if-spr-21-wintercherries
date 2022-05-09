@@ -15,13 +15,29 @@ Enter another number: 5
 The smallest number is 2
 '''
 
-number = int(input("Enter a number: "))
+number_1 = int(input("Enter a number: "))
 
-smallest = number
+number_2 = int(input("Enter another number: "))
 
-number = int(input("Enter another number: "))
+number_3 = int(input("Enter another number: "))
 
-if number < smallest:
-  smallest = number
-  
-print("The smallest number is ", smallest)
+if number_1 < number_2 and number_1 < number_3:
+  print("The smallest number is: ", number_1)
+
+if number_2 < number_1 and number_2 < number_3:
+  print("The smallest number is: ", number_2)
+
+if number_3 < number_1 and number_3 < number_2:
+  print("The smallest number is: ", number_3)
+
+if number_1 == number_2 == number_3:
+  print("The smallest number is: ", number_1)
+
+if number_1 == number_2 and number_1 < number_3:
+  print("The smallest number is:", number_2)
+
+if number_1 == number_3 and number_1 < number_2:
+  print("The smallest number is:", number_1)
+
+if number_2 == number_3 and number_2 < number_1:
+  print("The smallest number is:", number_3)
